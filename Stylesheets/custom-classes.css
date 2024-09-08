@@ -1,0 +1,125 @@
+/* this file containes the css classes that are used multiple times in the website */
+
+/* hero buttons  */
+.primary-btn-filled {
+    border: 2px solid var(--blue-color);
+    background-color: var(--blue-color);
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 10px 10px 10px 0;
+    border-radius: 7px;
+    letter-spacing: 1px;
+    /* text-transform: uppercase; */
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+
+.primary-btn-filled:hover {
+    background-color: var(--btn-hover-color);
+    border: 2px solid var(--btn-hover-color);
+}
+
+.secondary-btn-filled {
+    border: 2px solid var(--red-color);
+    background-color: var(--red-color);
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 10px 10px 10px 0;
+    border-radius: 7px;
+    letter-spacing: 1px;
+    /* text-transform: uppercase; */
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+
+.secondary-btn-filled:hover {
+    background-color: var(--btn-hover-color);
+    border: 2px solid var(--btn-hover-color);
+}
+
+.primary-btn-skeleton {
+    border: 2px solid var(--blue-color);
+    background-color: transparent;
+    color: var(--blue-color);
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 10px 10px 10px 0;
+    border-radius: 7px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.primary-btn-skeleton:hover {
+    border: 2px solid transparent;
+    background-color: var(--red-color);
+    color: #fff;
+}
+
+/* card buttons */
+
+.card-btn-filled {
+    border: 2px solid var(--primary-btn-color);
+    background-color: var(--primary-btn-color);
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px 5px 18px;
+    margin: 10px 10px 10px 0;
+    border-radius: 7px;
+    letter-spacing: 1.5px;
+    /* text-transform: uppercase; */
+    font-weight: 500;
+    min-width: 138px;
+}
+
+.card-btn-filled:hover {
+    background-color: var(--primary-btn-hover-color);
+    border: 2px solid var(--primary-btn-hover-color);
+}
+
+.card-btn-skeleton {
+    border: 2px solid var(--primary-btn-color);
+    background-color: transparent;
+    color: var(--primary-btn-color);
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 10px 10px 10px 0;
+    border-radius: 7px;
+    letter-spacing: 1.5px;
+    /* text-transform: uppercase; */
+    font-weight: 500;
+    min-width: 138px;
+}
+
+.card-btn-skeleton:hover {
+    border: 2px solid transparent;
+    background-color: var(--primary-btn-hover-color);
+    color: #fff;
+}
+
+/* navbar btn */
+
+.navbar-btn {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border: 2px solid var(--primary-btn-color) !important;
+    background-color: var(--primary-btn-color) !important;
+    color: #fff !important;
+    text-decoration: none;
+    padding: 2px 5px !important;
+    margin: 5px !important;
+    border-radius: 7px;
+}
+
+@media (max-width: 992px) {
+    .card-btn-filled {
+        margin: 15px 0 0 0;
+    }
+
+    .card-btn-skeleton {
+        margin: 15px 0 0 0;
+    }
+}
