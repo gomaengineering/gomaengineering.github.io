@@ -1,0 +1,53 @@
+.subpage-heading-btn{
+    border: 2px solid var(--red-color);
+    background-color: var(--red-color);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 10px 10px 10px 0;
+    border-radius: 20px 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+/*
+.subpage-hero-contents {
+    color: var(--primary-text-color);
+    margin: 100px 0 20px;
+}
+
+.subpage-hero-buttons {
+    margin-top: 20px;
+}
+*/
+.accordian-container {
+    margin-top: 100px;
+    max-width: 70%;
+}
+
+.accordion-button:focus {
+    /* overwriting bs css */
+    box-shadow: none;
+    outline: none;
+}
+
+.accordion-button:not(.collapsed) {
+    /* overwriting bs css */
+    background-color: #fff;
+}
+
+.subpage-content-container{
+    margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+    /* .subpage-hero-contents {
+        margin: 120px 0 20px 0;
+        text-align: center;
+    } */
+
+    .accordian-container {
+        max-width: 100%;
+    }
+}

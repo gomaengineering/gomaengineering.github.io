@@ -15,9 +15,9 @@
 
 <body>
   <section class="hero-banner">
-    <nav class="navbar navbar-expand-lg fixed-top hind-siliguri">
+    <nav id="perm-navbar-mobile" class="navbar navbar-expand-lg fixed-top hind-siliguri">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
           <img src="Assets/goma-engineering-logo.png"
             alt="Goma Engineering Consultation - Make Your Project Sustainable" width="115" height="auto" class="" />
         </a>
@@ -31,38 +31,27 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="#about">About Us</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Services
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="#">Sustainability Assesment</a>
-                </li>
-                <li><a class="dropdown-item" href="#">Bid Writing</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="Pages/services.html">Services</a>
             </li>
+
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Sectors
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#">Sustainability Management</a>
                 </li>
+                <!-- <li><a class="dropdown-item" href="#"></a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -70,28 +59,16 @@
                 Downloads
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Sustainability Calculators
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Calc1</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
+                <li><a class="dropdown-item" href="#">Coming Soon</a></li>
+                <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link navbar-btn-skeleton" href="Pages/calculator.html">Calculators</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-btn-filled" href="Pages/contactus.html">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -100,7 +77,7 @@
     <!-- nav bar ends -->
     <!-- hero contents start -->
     <section class="hero-section container hind-siliguri">
-      <div class="d-flex justify-content-start align-items-start flex-column">
+      <div class="d-flex justify-content-center align-items-center flex-column text-center">
         <div class="hero-contents">
           <div class="hero-main-text">
             <h1 class="hero-title">ENGINEERING TOMORROW:</h1>
@@ -109,12 +86,13 @@
             </h3>
           </div>
           <div class="hero-buttons">
-            <a href="#" class="secondary-btn-filled"> What we do? </a>
-            <a href="#" class="primary-btn-filled"> Contact Sales </a>
+            <a href="#services" class="secondary-btn-filled">What we do?</a>
+            <a href="Pages/contactus.html" class="primary-btn-filled">Contact Sales</a>
           </div>
         </div>
       </div>
     </section>
+
     <!-- hero links -->
     <section class="container">
       <div class="row">
@@ -124,15 +102,15 @@
         <div class="col col-md-2 d-flex justify-content-center">
           <ul class="list-unstyled d-inline-flex gap-3">
             <li>
-              <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook text-decoration-none mx-0"
+              <a href="#" target="_blank"><i class="bi bi-linkedin text-decoration-none"
                   style="color: var(--primary-text-color)"></i></a>
             </li>
             <li>
-              <a href="#" target="_blank">
-                <i class="bi bi-instagram text-decoration-none" style="color: var(--primary-text-color)"></i></a>
+              <a href="#" target="_blank"><i class="bi bi-twitter-x text-decoration-none"
+                  style="color: var(--primary-text-color)"></i></a>
             </li>
             <li>
-              <a href="#" target="_blank"><i class="bi bi-linkedin text-decoration-none"
+              <a href="#" target="_blank"><i class="bi bi-instagram text-decoration-none"
                   style="color: var(--primary-text-color)"></i></a>
             </li>
           </ul>
@@ -145,9 +123,10 @@
   </section>
   <!-- hero & nav ends -->
   <!-- about us section -->
-  <section class="container">
-    <div class="row">
-      <div class="col">
+
+  <section class="container hind-siliguri" id="about">
+    <div class="row align-items-center">
+      <div class="col-lg-6 col-md-12">
         <div class="section-text-content">
           <div class="d-flex justify-content-start align-items-start flex-column">
             <h3 class="section-title">About Us</h3>
@@ -165,103 +144,116 @@
               delivering high-quality services that exceed our clients'
               expectations and help them achieve their goals.
             </p>
+            <a href="Pages/aboutus.html" class="primary-btn-filled mt-3">
+              More About Us <i class="bi bi-arrow-right"></i>
+            </a>
           </div>
         </div>
-        <div class="">
-          <a href="#" class="primary-btn-filled"> More About Us ></a>
-        </div>
       </div>
-      <div class="col">
-        <img src="Assets/about-us.jpg" alt="About Us" class="section-img img-fluid" />
+      <div class="col-lg-6 col-md-12 text-center mt-4 mt-lg-0">
+        <img src="Assets/about-us.jpg" alt="About Us" class="section-img img-fluid border-radius-tlr" />
       </div>
     </div>
   </section>
+
   <!-- about section ends -->
   <!-- services starts -->
-  <section class="dark-section-bg">
+
+  <section class="dark-section-bg hind-siliguri" id="services">
     <section class="container">
       <div class="py-5">
-        <h3 class="section-title">What we do?</h3>
+        <h3>What we do?</h3>
         <h2 class="section-subtitle">Our Services</h2>
-        <div class="row">
-          <div class="col">
+        <div class="row text-center">
+          <div class="col-lg-4 col-md-6 mb-4">
             <div class="d-flex justify-content-center align-items-center flex-column">
               <div class="body-icons">
                 <i class="fa-brands fa-pagelines"></i>
               </div>
-              <h5 class="">Sustainability Management</h5>
+              <h5>Sustainability Management</h5>
             </div>
           </div>
-          <div class="col">
+          <div class="col-lg-4 col-md-6 mb-4">
             <div class="d-flex justify-content-center align-items-center flex-column">
               <div class="body-icons">
                 <i class="fa-solid fa-city"></i>
               </div>
-              <h5 class="">Consutruction Project Management</h5>
+              <h5>Construction Project Management</h5>
             </div>
           </div>
-          <div class="col">
+          <div class="col-lg-4 col-md-6 mb-4">
             <div class="d-flex justify-content-center align-items-center flex-column">
               <div class="body-icons">
                 <i class="fa-solid fa-file-invoice"></i>
               </div>
-              <h5 class="">Bid Writing</h5>
+              <h5>Bid Writing</h5>
             </div>
           </div>
+        </div>
 
-          <div class="mt-5">
-            <a href="#" class="secondary-btn-filled"> More Services > </a>
-          </div>
+        <div class="mt-5">
+          <a href="Pages/services.html" class="secondary-btn-filled">
+            More Services <i class="bi bi-arrow-right"></i>
+          </a>
         </div>
       </div>
     </section>
   </section>
   <!-- services ends  -->
   <!-- projects section starts  -->
-  <section class="container">
-    <div class="py-5">
+
+  <section class="container hind-siliguri" id="projects">
+    <div class="pt-5">
       <h3 class="section-title">Recent Projects</h3>
       <h2 class="section-subtitle">Our Outstanding Works</h2>
       <div class="my-4">
         <div class="row">
-          <div class="col">
-            <div class="card card-hover">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card card-hover border-radius-trr">
               <div class="card-img-overlay">Project 1</div>
-              <img src="Assets/building1.jpg" class="card-img-top" alt="Card Image" />
+              <img src="Assets/building1.jpg" class="card-img-top" alt="Project 1 Image" />
               <div class="hover-text">Project Description 1</div>
             </div>
           </div>
-          <div class="col">
-            <div class="card card-hover">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card card-hover border-radius-trr">
               <div class="card-img-overlay">Project 2</div>
-              <img src="Assets/building2.jpg" class="card-img-top" alt="Card Image" />
+              <img src="Assets/building2.jpg" class="card-img-top" alt="Project 2 Image" />
               <div class="hover-text">Project Description 2</div>
             </div>
           </div>
-          <div class="col">
-            <div class="card card-hover">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card card-hover border-radius-trr">
               <div class="card-img-overlay">Project 3</div>
-              <img src="Assets/building3.jpg" class="card-img-top" alt="Card Image" />
+              <img src="Assets/building3.jpg" class="card-img-top" alt="Project 3 Image" />
               <div class="hover-text">Project Description 3</div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="mt-5">
+      <a href="#" class="primary-btn-filled">
+        More Projects <i class="bi bi-arrow-right"></i>
+      </a>
+    </div>
+    <hr class="container border-3 opacity-100 mt-5 mb-0" style="color: var(--blue-color); max-width: 50%" />
   </section>
+
   <!-- projects section ends  -->
   <!-- testimonials section starts -->
-  <section class="container">
+
+  <section class="container hind-siliguri">
     <div class="py-5">
       <div class="d-flex justify-content-end align-items-end flex-column">
-        <h3 class="section-title-right">Testimonials</h3>
-        <h2 class="section-subtitle-right">Supply Chain Comments</h2>
+        <h3 class="section-title">Testimonials</h3>
+        <h2 class="section-subtitle">Supply Chain Comments</h2>
       </div>
 
       <div class="my-4">
         <div class="row">
-          <div class="col">
-            <div class="card testimonial-card-hover">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card testimonial-card-hover border-radius-tlr">
               <div class="card-img-overlay d-flex justify-content-center align-items-center flex-column">
                 <p class="quote">"A wonderful experience!"</p>
                 <p class="person-name">- John Doe</p>
@@ -273,11 +265,12 @@
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card testimonial-card-hover">
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card testimonial-card-hover border-radius-tlr">
               <div class="card-img-overlay d-flex justify-content-center align-items-center flex-column">
-                <p class="quote">"A wonderful experience!"</p>
-                <p class="person-name">- John Doe</p>
+                <p class="quote">"Highly recommended!"</p>
+                <p class="person-name">- Jane Smith</p>
               </div>
 
               <div class="testimonial-hover-text">
@@ -286,11 +279,12 @@
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card testimonial-card-hover">
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card testimonial-card-hover border-radius-tlr">
               <div class="card-img-overlay d-flex justify-content-center align-items-center flex-column">
-                <p class="quote">"A wonderful experience!"</p>
-                <p class="person-name">- John Doe</p>
+                <p class="quote">"Top-notch service!"</p>
+                <p class="person-name">- Michael Lee</p>
               </div>
 
               <div class="testimonial-hover-text">
@@ -302,20 +296,24 @@
         </div>
       </div>
     </div>
+
+    <hr class="container border-3 opacity-100 mt-0 mb-0" style="color: var(--blue-color); max-width: 50%" />
   </section>
   <!-- testimonials section ends  -->
   <!-- case studies section  -->
-  <section class="container">
-    <div class="py-5">
+
+  <section class="container hind-siliguri">
+    <div class="pt-5">
       <div class="d-flex justify-content-start align-items-start flex-column">
-        <h3 class="section-title-right">Case Studies</h3>
-        <h2 class="section-subtitle-right">Learn about our projects</h2>
+        <h3 class="section-title">Case Studies</h3>
+        <h2 class="section-subtitle">Learn about our projects</h2>
       </div>
+
       <div class="my-4">
         <div class="row">
-          <div class="col">
+          <div class="col-lg-4 col-md-6 mb-4">
             <a href="https://www.google.com" target="_blank">
-              <div class="card case-card-hover">
+              <div class="card case-card-hover border-radius-trr">
                 <div class="card-img-overlay d-flex justify-content-center align-items-center flex-column">
                   <p class="quote">"A wonderful experience!"</p>
                   <p class="person-name">- John Doe</p>
@@ -324,23 +322,25 @@
               </div>
             </a>
           </div>
-          <div class="col">
+
+          <div class="col-lg-4 col-md-6 mb-4">
             <a href="https://www.google.com" target="_blank">
-              <div class="card case-card-hover">
+              <div class="card case-card-hover border-radius-trr">
                 <div class="card-img-overlay d-flex justify-content-center align-items-center flex-column">
-                  <p class="quote">"A wonderful experience!"</p>
-                  <p class="person-name">- John Doe</p>
+                  <p class="quote">"An amazing project!"</p>
+                  <p class="person-name">- Jane Smith</p>
                   <p class="person-name mt-1 opacity-75">Read more</p>
                 </div>
               </div>
             </a>
           </div>
-          <div class="col">
+
+          <div class="col-lg-4 col-md-6 mb-4">
             <a href="https://www.google.com" target="_blank">
-              <div class="card case-card-hover">
+              <div class="card case-card-hover border-radius-trr">
                 <div class="card-img-overlay d-flex justify-content-center align-items-center flex-column">
-                  <p class="quote">"A wonderful experience!"</p>
-                  <p class="person-name">- John Doe</p>
+                  <p class="quote">"Exceptional service!"</p>
+                  <p class="person-name">- Michael Lee</p>
                   <p class="person-name mt-1 opacity-75">Read more</p>
                 </div>
               </div>
@@ -349,50 +349,61 @@
         </div>
       </div>
     </div>
+    <hr class="container border-3 opacity-100 my-5" style="color: var(--blue-color); max-width: 50%" />
   </section>
+
   <!-- case studies section  -->
   <!-- call to action starts-->
-  <section class="container">
-    <div class="call-to-action-bg d-flex justify-content-center align-items-center flex-column p-3">
-      <div class="cta-text">We can help you build sustainable projects!</div>
-      <a href="#" class="secondary-btn-filled"> Drop a message </a>
+  <section class="container hind-siliguri pt-3">
+    <div class="call-to-action-bg d-flex justify-content-center align-items-center flex-column p-3 mb-4 border-radius-tlr">
+      <div class="cta-text text-center">
+        We can help you build sustainable projects!
+      </div>
+      <a href="Pages/contactus.html" class="secondary-btn-filled mt-3">Drop a message</a>
     </div>
 
-    <div class="call-to-action-bg d-flex justify-content-center align-items-center p-3">
-      <div class="cta-text me-5">Find out how sustainable your company/project is?</div>
-      <a href="#" class="secondary-btn-filled"> Try Our Calculators </a>
+    <div class="call-to-action-bg d-flex flex-column flex-md-row justify-content-center align-items-center p-3 mb-4 border-radius-tlr">
+      <div class="cta-text text-center text-md-start mb-3 mb-md-0 me-md-5">
+        Find out how sustainable your company/project is?
+      </div>
+      <a href="Pages/calculator.html" class="secondary-btn-filled">Try Our Calculators</a>
     </div>
   </section>
+
   <!-- call to action ends -->
 
   <!-- footer  -->
-  <footer class="footer">
+  <footer class="footer hind-siliguri ">
     <div class="container">
       <div class="row">
         <!-- Logo and Address -->
-        <div class="col-md-4">
+        <div class="col-md-4 mb-4 mb-md-0">
           <img src="Assets/goma-engineering-logo.png" alt="Goma Engineering Logo" class="footer-logo" />
-          <p>
-            <strong>Goma Engineering Consultation Pvt. Ltd.</strong><br />
-            Suryabinayak– 2, Bhaktapur<br />
-            +977-9851364187<br />
+
+          <div>
+            <strong>Goma Engineering Consultation Pvt. Ltd.</strong>
+          </div>
+          <div>Suryabinayak– 2, Bhaktapur</div>
+          <div>+977-9851364187</div>
+          <div class="stop-overflow-email">
             <a href="mailto:gomaengineeringconsultation@gmail.com"
-              style="text-decoration: none; color:var(--primary-text-color)">gomaengineeringconsultation@gmail.com</a>
-          </p>
-          <div class="footer-social-icons">
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
+              style="text-decoration: none; color: var(--primary-text-color);">gomaengineeringconsultation@gmail.com</a>
+          </div>
+
+          <div class="footer-social-icons mt-2">
             <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
           </div>
         </div>
 
         <!-- Quick Links -->
-        <div class="col-md-2">
+        <div class="col-md-2 mb-4 mb-md-0">
           <h5>Quick Links</h5>
           <ul class="quick-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="Pages/aboutus.html">About</a></li>
+            <li><a href="Pages/services.html">Services</a></li>
             <li><a href="#">Sectors</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Portfolio</a></li>
@@ -400,7 +411,7 @@
         </div>
 
         <!-- Services -->
-        <div class="col-md-4">
+        <div class="col-md-4 mb-4 mb-md-0">
           <h5>Services</h5>
           <ul class="services">
             <li><a href="#">Environmental Impact Assessments (EIA)</a></li>
@@ -423,21 +434,28 @@
         <div class="col-md-2">
           <h5>Calculators</h5>
           <ul class="calculators">
-            <li><a href="#">Sustainability1</a></li>
-            <li><a href="#">Sustainability2</a></li>
+            <li><a href="#">Coming Soon</a></li>
+            <!-- <li><a href="#">Sustainability2</a></li> -->
           </ul>
         </div>
       </div>
     </div>
   </footer>
-  <div class="footer-bottom text-center">
-    <div class="">
-      <div>
-        Copyright © 2024 Goma Engineering Consultation Pvt. Ltd. |
-        <a href="#" style="text-decoration: none">Privacy Policy</a> |
-        <a href="#" style="text-decoration: none">Terms of Service</a> |
+
+  <div class="footer-bottom text-center overflow-hidden">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-auto">
+        Copyright &copy; 2024 Goma Engineering Consultation Pvt. Ltd.
+      </div>
+      <div class="col-auto">
+        <a href="Pages/privacypolicy.html" style="text-decoration: none">Privacy Policy</a>
+      </div>
+      <div class="col-auto">
+        <a href="Pages/tos.html" style="text-decoration: none">Terms of Service</a>
+      </div>
+      <div class="col-auto">
         Website by:
-        <a href="https://www.bimochanpoudel.com.np" target="_blank" style="text-decoration: none">Bimochan Poudel</a>
+        <a href="https://www.bimochanpoudel.com.np" style="text-decoration: none" target="_blank">Bimochan Poudel</a>
       </div>
     </div>
   </div>
