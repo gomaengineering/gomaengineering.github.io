@@ -37,6 +37,11 @@
     transition: all 0.5s ease;
 }
 
+.form-control:focus {
+    /* overwriting bs css */
+    box-shadow: none !important;
+  }
+
 /* Hero Section CSS */
 .hero-banner {
     background-image: url(../Assets/windmill-35.png);
