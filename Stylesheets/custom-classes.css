@@ -1,6 +1,45 @@
 /* this file containes the css classes that are used multiple times in the website */
 
 /* hero buttons  */
+.hero-primary-btn-filled {
+    border: 2px solid var(--blue-color);
+    background-color: var(--blue-color);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 10px 10px 10px 0;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    /* text-transform: uppercase; */
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+
+.hero-primary-btn-filled:hover {
+    background-color: var(--btn-hover-color);
+    border: 2px solid var(--btn-hover-color);
+}
+
+.hero-secondary-btn-filled {
+    border: 2px solid var(--red-color);
+    background-color: var(--red-color);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 10px 10px 10px 0;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    /* text-transform: uppercase; */
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+
+.hero-secondary-btn-filled:hover {
+    background-color: var(--btn-hover-color);
+    border: 2px solid var(--btn-hover-color);
+}
+
+
 .primary-btn-filled {
     border: 2px solid var(--blue-color);
     background-color: var(--blue-color);
