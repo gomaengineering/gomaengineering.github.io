@@ -1,11 +1,489 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="../Stylesheets/main.css" />
+    <link rel="stylesheet" href="../Stylesheets/variables.css" />
+    <link rel="stylesheet" href="../Stylesheets/custom-classes.css" />
+    <link rel="stylesheet" href="../Stylesheets/subpage.css" />
+    <title>Services | Goma Engineering Consultation</title>
 </head>
+
 <body>
-    Comming Soon..
+    <section class="hero-banner">
+        <nav id="perm-navbar-mobile" class="navbar navbar-expand-lg fixed-top hind-siliguri">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="../Assets/goma-engineering-logo.png"
+                        alt="Goma Engineering Consultation - Make Your Project Sustainable" width="115" height="auto"
+                        class="" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Sectors
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">Sustainability Management</a>
+                                </li>
+                                <!-- <li><a class="dropdown-item" href="#"></a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#projects">Projects</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Downloads
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Coming Soon</a></li>
+                                <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-btn-skeleton" href="calculator.html">Calculators</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-btn-filled" href="contactus.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- nav bar ends -->
+        <!-- hero contents start -->
+        <!-- <section class="hero-section container hind-siliguri">
+            <div class="d-flex justify-content-center align-items-center flex-column text-center">
+                <div class="subpage-hero-contents">
+                    <div class="hero-main-text">
+                        <h1 class="hero-title">Our Services</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- hero links -->
+        <!-- <section class="container">
+            <div class="row">
+                <div class="col col-md-5">
+                    <hr class="border-2 opacity-75" />
+                </div>
+                <div class="col col-md-2 d-flex justify-content-center">
+                    <ul class="list-unstyled d-inline-flex gap-3">
+                        <li>
+                            <a href="#" target="_blank"><i class="bi bi-linkedin text-decoration-none"
+                                    style="color: var(--primary-text-color)"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><i class="bi bi-twitter-x text-decoration-none"
+                                    style="color: var(--primary-text-color)"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><i class="bi bi-instagram text-decoration-none"
+                                    style="color: var(--primary-text-color)"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col col-md-5">
+                    <hr class="border-2 opacity-75" />
+                </div>
+            </div>
+        </section> -->
+    </section>
+    <!-- hero & nav ends -->
+
+    <!-- services accordian starts -->
+    <section class="container accordian-container hind-siliguri">
+        <div class="d-flex justify-content-start align-items-start">
+            <p class="subpage-heading-btn">Our Services</p>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <strong>Environmental Impact Assessments (EIA)</strong>
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>
+                                Conducting comprehensive environmental impact studies for
+                                construction/development projects.
+                            </li>
+                            <li>
+                                Identifying and mitigating potential environmental risks.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <strong>Sustainability Strategy Development</strong>
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>
+                                Crafting tailored sustainability strategies for companies of
+                                all scale.
+                            </li>
+                            <li>Advising on sustainable materials and practices.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <strong>Bid Writing Services</strong>
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>
+                                Integrate into a company’s tender writing team and provide
+                                support in sections where they lack expertise including but
+                                not limited to Sustainability and Environmental Management,
+                                Corporate Social Responsibility, Carbon Monitoring and Health
+                                & Safety.
+                            </li>
+                            <li>
+                                Provide technical assistance with Tender, Contract and
+                                Baseline Programmes with years of experience using Microsoft
+                                Project, Airtable and many BIM software as per the
+                                requirement.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        <strong>Carbon Footprint Analysis</strong>
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>
+                                Monitoring and analyzing carbon emissions from construction
+                                activities and commercial locations.
+                            </li>
+                            <li>
+                                Developing strategies for carbon reduction and offsetting.
+                            </li>
+                            <li>
+                                Provide detailed reports on aforementioned terms especially
+                                designed to show your progress to stakeholders.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        <strong>ESG Reporting and Compliance</strong>
+                    </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>
+                                Assisting companies with ESG reporting to meet regulatory and
+                                stakeholder expectations.
+                            </li>
+                            <li>AProviding guidance on improving ESG performance.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                        <strong>Green Building Certification Support</strong>
+                    </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>
+                                Advising on green building certifications such as LEED or
+                                BREEAM.
+                            </li>
+                            <li>Guiding clients through the certification process.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                        <strong>Waste Management Planning</strong>
+                    </button>
+                </h2>
+                <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>
+                                Developing waste reduction and management plans for
+                                construction or commercial sites.
+                            </li>
+                            <li>Promoting recycling and sustainable disposal methods.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                        <strong>Environmental Management Systems (EMS)</strong>
+                    </button>
+                </h2>
+                <div id="flush-collapseEight" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>
+                                Implementing and auditing Environmental Management Systems
+                                (e.g., ISO 14001).
+                            </li>
+                            <li>Ensuring compliance with environmental regulations.</li>
+                            <li>
+                                Providing our bespoke Sustainability Management System which
+                                will guide the company in their sustainability journey.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                        <strong>Water and Resource Conservation</strong>
+                    </button>
+                </h2>
+                <div id="flush-collapseNine" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>
+                                Designing strategies for water conservation and efficient
+                                resource use in construction projects or commercial sites.
+                            </li>
+                            <li>Implementing sustainable resource management practices.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                        <strong>Renewable Energy Integration</strong>
+                    </button>
+                </h2>
+                <div id="flush-collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>
+                                Advising on the integration of renewable energy solutions to
+                                businesses.
+                            </li>
+                            <li>
+                                Facilitating the adoption of solar, wind, and other clean
+                                energy technologies.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseEleven" aria-expanded="false"
+                        aria-controls="flush-collapseEleven">
+                        <strong>Stakeholder Engagement and Community Relations</strong>
+                    </button>
+                </h2>
+                <div id="flush-collapseEleven" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>
+                                Managing stakeholder engagement processes to address
+                                environmental concerns.
+                            </li>
+                            <li>
+                                Developing communication strategies to foster positive
+                                community relations.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services accordian ends -->
+    <!-- call to action starts-->
+    <section class="container hind-siliguri pt-3">
+        <div class="call-to-action-bg d-flex justify-content-center align-items-center flex-column p-3 mb-4 border-radius-tlr">
+            <div class="cta-text text-center">
+                We can help you build sustainable projects!
+            </div>
+            <a href="contactus.html" class="secondary-btn-filled mt-3">Drop a message</a>
+        </div>
+
+        <div
+            class="call-to-action-bg d-flex flex-column flex-md-row justify-content-center align-items-center p-3 mb-4 border-radius-tlr">
+            <div class="cta-text text-center text-md-start mb-3 mb-md-0 me-md-5">
+                Find out how sustainable your company/project is?
+            </div>
+            <a href="calculator.html" class="secondary-btn-filled">Try Our Calculators</a>
+        </div>
+    </section>
+
+    <!-- call to action ends -->
+
+    <!-- footer  -->
+    <footer class="footer hind-siliguri">
+        <div class="container">
+            <div class="row">
+                <!-- Logo and Address -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <img src="../Assets/goma-engineering-logo.png" alt="Goma Engineering Logo" class="footer-logo" />
+
+                    <div>
+                        <strong>Goma Engineering Consultation Pvt. Ltd.</strong>
+                    </div>
+                    <div>Suryabinayak– 2, Bhaktapur</div>
+                    <div>+977-9851364187</div>
+                    <div class="stop-overflow-email">
+                        <a href="mailto:gomaengineeringconsultation@gmail.com"
+                            style="text-decoration: none; color: var(--primary-text-color)">gomaengineeringconsultation@gmail.com</a>
+                    </div>
+
+                    <div class="footer-social-icons mt-2">
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="quick-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="#">Sectors</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Services</h5>
+                    <ul class="services">
+                        <li><a href="#">Environmental Impact Assessments (EIA)</a></li>
+                        <li><a href="#">Sustainability Strategy Development</a></li>
+                        <li><a href="#">Bid Writing Services</a></li>
+                        <li><a href="#">Carbon Footprint Analysis</a></li>
+                        <li><a href="#">ESG Reporting and Compliance</a></li>
+                        <li><a href="#">Green Building Certification Support</a></li>
+                        <li><a href="#">Environmental Management Systems (EMS)</a></li>
+                        <li><a href="#">Waste Management Planning</a></li>
+                        <li><a href="#">Water and Resource Conservation</a></li>
+                        <li><a href="#">Renewable Energy Integration</a></li>
+                        <li>
+                            <a href="#">Stakeholder Engagement and Community Relations</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Calculators -->
+                <div class="col-md-2">
+                    <h5>Calculators</h5>
+                    <ul class="calculators">
+                        <li><a href="#">Coming Soon</a></li>
+                        <!-- <li><a href="#">Sustainability2</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-bottom text-center overflow-hidden">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-auto">
+                Copyright &copy; 2024 Goma Engineering Consultation Pvt. Ltd.
+            </div>
+            <div class="col-auto">
+                <a href="privacypolicy.html" style="text-decoration: none">Privacy Policy</a>
+            </div>
+            <div class="col-auto">
+                <a href="tos.html" style="text-decoration: none">Terms of Service</a>
+            </div>
+            <div class="col-auto">
+                Website by:
+                <a href="https://www.bimochanpoudel.com.np" style="text-decoration: none" target="_blank">Bimochan
+                    Poudel</a>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="../Scripts/navbar.js"></script>
+
 </html>

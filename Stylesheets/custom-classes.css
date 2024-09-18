@@ -116,16 +116,10 @@
 }
 
 .navbar-btn-filled:hover {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
+    
     border: 2px solid var(--primary-text-color) !important;
     background-color: var(--primary-text-color) !important;
-    color: #fff !important;
-    text-decoration: none;
-    padding: 2px 5px !important;
-    margin: 5px !important;
-    border-radius: 50px;
+    
 }
 
 
@@ -144,16 +138,10 @@
 }
 
 .navbar-btn-skeleton:hover {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
+    
     border: 2px solid var(--primary-text-color) !important;
     background-color: var(--primary-text-color) !important;
     color: #fff !important;
-    text-decoration: none;
-    padding: 2px 5px !important;
-    margin: 5px !important;
-    border-radius: 50px;
 }
 
 
