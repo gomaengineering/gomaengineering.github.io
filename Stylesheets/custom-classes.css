@@ -101,18 +101,61 @@
 
 /* navbar btn */
 
-.navbar-btn {
+.navbar-btn-filled {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    border: 2px solid var(--primary-btn-color) !important;
-    background-color: var(--primary-btn-color) !important;
+    border: 2px solid var(--blue-color) !important;
+    background-color: var(--blue-color) !important;
+    color: #fff !important;
+    text-decoration: none;
+    padding: 2px 5px !important;
+    margin: 5px !important;
+    border-radius: 7px;
+    transition: all 0.5s ease;
+}
+
+.navbar-btn-filled:hover {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border: 2px solid var(--primary-text-color) !important;
+    background-color: var(--primary-text-color) !important;
     color: #fff !important;
     text-decoration: none;
     padding: 2px 5px !important;
     margin: 5px !important;
     border-radius: 7px;
 }
+
+
+.navbar-btn-skeleton {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border: 2px solid var(--blue-color) !important;
+    background-color: transparent !important;
+    color: var(--blue-color) !important;
+    text-decoration: none;
+    padding: 2px 5px !important;
+    margin: 5px !important;
+    border-radius: 7px;
+    transition: all 0.5s ease;
+}
+
+.navbar-btn-skeleton:hover {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border: 2px solid var(--primary-text-color) !important;
+    background-color: var(--primary-text-color) !important;
+    color: #fff !important;
+    text-decoration: none;
+    padding: 2px 5px !important;
+    margin: 5px !important;
+    border-radius: 7px;
+}
+
 
 @media (max-width: 992px) {
     .card-btn-filled {
