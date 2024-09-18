@@ -37,12 +37,12 @@
 }
 
 .navbar-scroll {
-    /*background: linear-gradient(45deg, var(--body--background--navbar--left--col), var(--body--background--navbar--right--col));*/
     background: #f3f3f3;
     box-shadow: 0 0 30px -20px #041220;
     transition: all 0.5s ease;
 }
 
+/* Hero Section CSS */
 .hero-banner {
     background-image: url(../Assets/windmill-35.png);
     width: 100%;
@@ -51,6 +51,8 @@
 }
 
 /* Index Page CSS */
+
+/* hero section css */
 .hero-contents {
     color: var(--primary-text-color);
     margin: 200px 0
@@ -97,6 +99,7 @@
 }
 
 /* Projects card css */
+/*
 .card-hover {
     position: relative;
     overflow: hidden;
@@ -134,8 +137,56 @@
 
 .card-hover:hover .hover-text {
     bottom: 0;
+}*/
+.card-hover {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    /* Set to 100% to let Bootstrap control the width */
+    height: 300px;
+    /* Default height */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.card-hover img {
+    transition: transform 0.3s ease;
+    width: 100%;
+    /* Ensure the image covers the card fully */
+    height: 100%;
+    /* Maintain full height for card size */
+    object-fit: cover;
+    /* Cover the card without stretching */
+}
+
+.card-hover:hover img {
+    transform: scale(1.1);
+    /* Zoom effect on hover */
+}
+
+.card-hover .hover-text {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    transition: bottom 0.4s ease;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.card-hover:hover .hover-text {
+    bottom: 0;
+}
+
+/* Testimonials card css */
+/*
 .testimonial-card-hover {
     position: relative;
     overflow: hidden;
@@ -176,9 +227,56 @@
     font-size: 1em;
     color: #131313;
 }
+*/
+
+.testimonial-card-hover {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    /* Allow Bootstrap grid to control width */
+    height: 300px;
+    /* Default height */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-card-hover .testimonial-hover-text {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--blue-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    transition: bottom 0.4s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.testimonial-card-hover:hover .testimonial-hover-text {
+    bottom: 0;
+}
+
+.quote {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.person-name {
+    font-size: 1em;
+    color: #131313;
+}
+
+/* Media Queries for Responsiveness */
 
 .case-card-hover {
-    width: 400px;
+    width: 100%;
+    /* Allow Bootstrap grid to control the width */
     height: 200px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
@@ -189,6 +287,7 @@
     box-shadow: 0 4px 9px rgba(0, 0, 0, 0.4);
 }
 
+/* Call to Action Section CSS */
 .call-to-action-bg {
     margin: 0 50px 50px 50px;
     background-color: var(--blue-color);
@@ -205,40 +304,235 @@
 
 .cta-text {
     font-size: 40px;
+    text-align: center;
 }
 
+/* Footer CSS */
 .footer {
     background-color: #f8f9fa;
-    padding: 40px 0 0 0;
-  }
-  .footer-logo {
+    padding: 40px 0;
+}
+
+.footer-logo {
     width: 150px;
-  }
-  .footer .services,
-  .footer .quick-links,
-  .footer .calculators {
+}
+
+.footer .services,
+.footer .quick-links,
+.footer .calculators {
     list-style: none;
     padding: 0;
-  }
-  .footer h5 {
+}
+
+.footer h5 {
     font-weight: bold;
     margin-bottom: 20px;
-  }
-  .footer a {
+}
+
+.footer a {
     text-decoration: none;
     color: #000;
-  }
+}
 
-  .footer-social-icons a {
+.footer-social-icons a {
     margin-right: 15px;
     font-size: 1.5rem;
     color: #000;
-  }
+}
 
-  .footer-bottom {
+/* Footer Bottom Styling */
+.footer-bottom {
     padding: 10px;
-    /* border-top: 1px solid #ccc; */
     background-color: #000;
     color: #fff;
-    font-size: 15px;
+    font-size: 14px;
+}
+
+
+.stop-overflow-email {
+    word-wrap: break-word;
+    /* Break long words onto the next line */
+    word-break: break-all;
+    /* Ensure that the entire string fits within the container */
+    display: inline-block;
+    /* Ensure it stays within the block */
+    width: 100%;
+    /* Make the link fit its parent container */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 992px) {
+    #perm-navbar-mobile {
+        background: #f3f3f3;
+        box-shadow: 0 0 30px -20px #041220;
+        transition: all 0.5s ease;
+    }
+
+    .hero-title {
+        font-size: 65px;
+    }
+
+    .hero-subtitle {
+        font-size: 45px;
+    }
+
+    .hero-buttons {
+        margin-top: 40px;
+    }
+
+    .card-hover {
+        height: 250px;
+        /* Reduce card height on medium screens */
+    }
+
+    .hover-text {
+        font-size: 1.3rem;
+        /* Reduce font size for hover text */
+    }
+
+    .testimonial-card-hover {
+        height: 250px;
+        /* Decrease height on medium screens */
+    }
+
+    .testimonial-hover-text {
+        font-size: 1.3rem;
+        /* Slightly smaller font size */
+    }
+
+    .case-card-hover {
+        height: 180px;
+        /* Reduce height for medium screens */
+    }
+
+    .call-to-action-bg {
+        margin: 0 30px 30px 30px;
+    }
+
+    .cta-text {
+        font-size: 35px;
+    }
+}
+
+/* Media Queries for Tablets and Large Mobiles (up to 768px) */
+@media (max-width: 768px) {
+    .hero-contents {
+        margin: 150px 0 50px 0;
+        text-align: center;
+        /* Center text for smaller screens */
+    }
+  
+
+    .hero-title {
+        font-size: 55px;
+    }
+
+    .hero-subtitle {
+        font-size: 35px;
+    }
+
+    .hero-buttons {
+        margin-top: 30px;
+    }
+
+    .card-hover {
+        height: 200px;
+        /* Reduce card height on small screens */
+    }
+
+    .hover-text {
+        font-size: 1.2rem;
+        /* Further reduce font size for hover text */
+    }
+
+    .testimonial-card-hover {
+        height: 220px;
+        /* Reduce height for small screens */
+    }
+
+    .testimonial-hover-text {
+        font-size: 1.2rem;
+        /* Further reduce font size */
+    }
+
+    .case-card-hover {
+        height: 160px;
+        /* Further reduce height for small screens */
+    }
+
+    .call-to-action-bg {
+        margin: 0 20px 20px 20px;
+    }
+
+    .cta-text {
+        font-size: 30px;
+    }
+
+    .footer-logo {
+        width: 120px;
+    }
+
+    .footer-social-icons a {
+        margin-right: 10px;
+    }
+}
+
+/* Media Queries for Small Mobiles (up to 576px) */
+@media (max-width: 576px) {
+    
+
+    .hero-title {
+        font-size: 50px;
+    }
+
+    .hero-subtitle {
+        font-size: 30px;
+    }
+
+    .hero-buttons {
+        margin-top: 20px;
+    }
+
+    .card-hover {
+        height: 180px;
+        /* Further reduce card height on extra small screens */
+    }
+
+    .hover-text {
+        font-size: 1rem;
+        /* Small font size for mobile */
+    }
+
+    .testimonial-card-hover {
+        height: 180px;
+        /* Smaller height for mobile devices */
+    }
+
+    .testimonial-hover-text {
+        font-size: 1rem;
+        /* Smallest font size for mobile */
+    }
+
+    .quote {
+        font-size: 1rem;
+        /* Adjust quote font size for mobile */
+    }
+
+    .person-name {
+        font-size: 0.9rem;
+        /* Adjust person name font size for mobile */
+    }
+
+    .case-card-hover {
+        height: 140px;
+        /* Smallest height for mobile devices */
+    }
+
+    .call-to-action-bg {
+        margin: 0 15px 15px 15px;
+    }
+
+    .cta-text {
+        font-size: 25px;
+    }
 }

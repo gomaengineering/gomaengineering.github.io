@@ -8,7 +8,7 @@
     text-decoration: none;
     padding: 5px 10px;
     margin: 10px 10px 10px 0;
-    border-radius: 7px;
+    border-radius: 50px;
     letter-spacing: 1px;
     /* text-transform: uppercase; */
     font-weight: 500;
@@ -27,7 +27,7 @@
     text-decoration: none;
     padding: 5px 10px;
     margin: 10px 10px 10px 0;
-    border-radius: 7px;
+    border-radius: 50px;
     letter-spacing: 1px;
     /* text-transform: uppercase; */
     font-weight: 500;
@@ -46,7 +46,7 @@
     text-decoration: none;
     padding: 5px 10px;
     margin: 10px 10px 10px 0;
-    border-radius: 7px;
+    border-radius: 50px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     font-weight: 500;
@@ -67,7 +67,7 @@
     text-decoration: none;
     padding: 5px 10px 5px 18px;
     margin: 10px 10px 10px 0;
-    border-radius: 7px;
+    border-radius: 50px;
     letter-spacing: 1.5px;
     /* text-transform: uppercase; */
     font-weight: 500;
@@ -86,7 +86,7 @@
     text-decoration: none;
     padding: 5px 10px;
     margin: 10px 10px 10px 0;
-    border-radius: 7px;
+    border-radius: 50px;
     letter-spacing: 1.5px;
     /* text-transform: uppercase; */
     font-weight: 500;
@@ -109,9 +109,9 @@
     background-color: var(--blue-color) !important;
     color: #fff !important;
     text-decoration: none;
-    padding: 2px 5px !important;
+    padding: 2px 7px !important;
     margin: 5px !important;
-    border-radius: 7px;
+    border-radius: 50px;
     transition: all 0.5s ease;
 }
 
@@ -125,7 +125,7 @@
     text-decoration: none;
     padding: 2px 5px !important;
     margin: 5px !important;
-    border-radius: 7px;
+    border-radius: 50px;
 }
 
 
@@ -137,9 +137,9 @@
     background-color: transparent !important;
     color: var(--blue-color) !important;
     text-decoration: none;
-    padding: 2px 5px !important;
+    padding: 2px 7px !important;
     margin: 5px !important;
-    border-radius: 7px;
+    border-radius: 50px;
     transition: all 0.5s ease;
 }
 
@@ -153,7 +153,7 @@
     text-decoration: none;
     padding: 2px 5px !important;
     margin: 5px !important;
-    border-radius: 7px;
+    border-radius: 50px;
 }
 
 
