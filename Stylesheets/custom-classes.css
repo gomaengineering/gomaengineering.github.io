@@ -184,6 +184,13 @@
 }
 
 
+.slow-hover {
+    transition: all 0.5s ease;
+}
+.slow-hover:hover {
+    transform: scale(1.01);
+}
+
 @media (max-width: 992px) {
     .card-btn-filled {
         margin: 15px 0 0 0;
