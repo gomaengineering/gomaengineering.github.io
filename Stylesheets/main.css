@@ -3,10 +3,19 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth !important;
 }
 
 /* Navbar CSS */
-
+.navbar-nav .nav-link {
+    transition: transform 0.2s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: var(--blue-color);
+    transform: scale(1.02);
+  }
+  
 
 
 .navbar-toggler-icon {
@@ -240,7 +249,11 @@
     border-radius: 50% !important;
     padding: 5px 9px;
     margin: 5px;
+    transition: transform 0.3s ease;
+  }
 
+.back-to-top-btn:hover {
+    transform: scale(1.1);
   }
   
   #btn-back-to-top {
