@@ -1,4 +1,4 @@
-.subpage-heading-btn{
+.subpage-heading-btn {
     border: 2px solid var(--red-color);
     background-color: var(--red-color);
     color: #fff;
@@ -11,6 +11,7 @@
     font-weight: 500;
     transition: all 0.5s ease;
 }
+
 /*
 .subpage-hero-contents {
     color: var(--primary-text-color);
@@ -37,8 +38,30 @@
     background-color: #fff;
 }
 
-.subpage-content-container{
+.subpage-content-container {
     margin-top: 100px;
+}
+
+.subpage-heading {
+    font-size: 50px;
+    font-weight: 600 !important;
+}
+
+.subpage-subheading {
+    font-size: 40px;
+    font-weight: 500 !important;
+}
+
+/* Media Queries */
+
+@media (max-width: 992px) {
+    .subpage-heading {
+        font-size: 45px;
+    }
+
+    .subpage-subheading {
+        font-size: 40px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -49,5 +72,24 @@
 
     .accordian-container {
         max-width: 100%;
+    }
+
+    .subpage-heading {
+        font-size: 35px;
+    }
+
+    .subpage-subheading {
+        font-size: 30px;
+    }
+}
+
+/* Media Queries for Small Mobiles (up to 576px) */
+@media (max-width: 576px) {
+    .subpage-heading {
+        font-size: 30px;
+    }
+
+    .subpage-subheading {
+        font-size: 28px;
     }
 }
