@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /Scripts/
+
+Sitemap: https://gomaengineering.com/sitemap.xml 
