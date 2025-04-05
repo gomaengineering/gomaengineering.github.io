@@ -95,8 +95,35 @@
 }
 
 .section-title {
-    font-weight: 600;
+    font-weight: 700;
     color: var(--blue-color);
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--blue-color);
+}
+
+.section-subtitle {
+    font-weight: 800;
+    margin-bottom: 25px;
+    font-size: 2rem;
+    color: var(--primary-text-color);
+}
+
+/* For right-aligned headers */
+.section-header.text-end .section-title::after {
+    right: 0;
+    left: auto;
 }
 
 .body-icons {
@@ -113,53 +140,111 @@
     border-radius: 0 50px !important;
 }
 
+.border-radius-tlr-internal {
+    border-radius: 50px 0 !important;
+}
+
+.border-radius-trr-internal {
+    border-radius: 0 50px !important;
+}
+
+/* Section Headers */
+.section-header {
+    margin-bottom: 30px;
+    position: relative;
+}
+
 /* Projects card css */
 
-.card-hover {
+.project-card-hover {
     position: relative;
     overflow: hidden;
     width: 100%;
-    /* Set to 100% to let Bootstrap control the width */
     height: 300px;
-    /* Default height */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f8f9fa;
+    border: none;
 }
 
-.card-hover img {
+.project-card-hover img {
     transition: transform 0.3s ease;
     width: 100%;
-    /* Ensure the image covers the card fully */
     height: 100%;
-    /* Maintain full height for card size */
     object-fit: cover;
-    /* Cover the card without stretching */
 }
 
-.card-hover:hover img {
+.project-card-hover:hover img {
     transform: scale(1.1);
-    /* Zoom effect on hover */
 }
 
-.card-hover .hover-text {
+.project-preview {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 0;
+    border-bottom: 3px solid var(--blue-color);
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.project-preview.border-radius-trr-internal {
+    border-radius: 0 50px 0 0 !important;
+}
+
+.project-preview-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--blue-color);
+    margin-bottom: 0;
+    padding: 12px 15px;
+}
+
+.project-card-hover .project-hover-text {
     position: absolute;
     bottom: -100%;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(42, 66, 144, 0.95);
     color: white;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    font-size: 1.5rem;
     transition: bottom 0.4s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
     box-sizing: border-box;
+    overflow-y: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+.project-card-hover:hover .project-hover-text {
+    bottom: 0;
+}
+
+.project-hover-text::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.project-full-content {
+    max-height: 100%;
+    padding-right: 5px;
+    width: 100%;
+}
+
+.project-title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); */
     text-align: center;
 }
 
-.card-hover:hover .hover-text {
-    bottom: 0;
+.project-description {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: left;
 }
 
 /* Testimonials card css */
@@ -168,10 +253,20 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    /* Allow Bootstrap grid to control width */
     height: 300px;
-    /* Default height */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f8f9fa;
+    border: none;
+}
+
+.testimonial-preview {
+    width: 90%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.testimonial-preview.border-radius-tlr-internal {
+    border-radius: 50px 0 0 0 !important;
 }
 
 .testimonial-card-hover .testimonial-hover-text {
@@ -183,37 +278,69 @@
     background-color: var(--blue-color);
     color: white;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    font-size: 1.5rem;
     transition: bottom 0.4s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
     box-sizing: border-box;
-    text-align: center;
+    overflow-y: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
 }
 
 .testimonial-card-hover:hover .testimonial-hover-text {
     bottom: 0;
 }
 
+.testimonial-hover-text::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.testimonial-hover-text.border-radius-tlr-internal {
+    border-radius: 50px 0 0 0 !important;
+}
+
+.testimonial-full-content {
+    max-height: 100%;
+    padding-right: 5px;
+}
+
+.testimonial-title {
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.testimonial-full-content p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
 .quote {
     font-size: 1.2em;
     font-weight: bold;
+    line-height: 1.4;
 }
 
 .person-name {
     font-size: 1em;
     color: #131313;
+    margin-top: 10px;
 }
 
 /* Case Studies card css */
 .case-card-hover {
+    position: relative;
+    overflow: hidden;
     width: 100%;
-    /* Allow Bootstrap grid to control the width */
     height: 200px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    border: none;
 }
 
 .case-card-hover:hover {
@@ -337,14 +464,25 @@
         margin-top: 40px;
     }
 
-    .card-hover {
+    .project-card-hover {
         height: 250px;
-        /* Reduce card height on medium screens */
     }
 
-    .hover-text {
-        font-size: 1.3rem;
-        /* Reduce font size for hover text */
+    .project-preview-title {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .project-hover-text {
+        padding: 15px;
+    }
+
+    .project-title {
+        font-size: 1.2rem;
+    }
+
+    .project-description {
+        font-size: 0.95rem;
     }
 
     .testimonial-card-hover {
@@ -353,8 +491,17 @@
     }
 
     .testimonial-hover-text {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         /* Slightly smaller font size */
+        padding: 15px;
+    }
+
+    .testimonial-title {
+        font-size: 1.1rem;
+    }
+
+    .testimonial-full-content p {
+        font-size: 0.9rem;
     }
 
     .case-card-hover {
@@ -368,6 +515,14 @@
 
     .cta-text {
         font-size: 35px;
+    }
+
+    .section-subtitle {
+        font-size: 1.8rem;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
     }
 }
 
@@ -392,14 +547,26 @@
         margin-top: 30px;
     }
 
-    .card-hover {
-        height: 200px;
-        /* Reduce card height on small screens */
+    .project-card-hover {
+        height: 220px;
     }
 
-    .hover-text {
-        font-size: 1.2rem;
-        /* Further reduce font size for hover text */
+    .project-preview-title {
+        font-size: 0.95rem;
+        padding: 8px 12px;
+    }
+
+    .project-hover-text {
+        padding: 12px;
+    }
+
+    .project-title {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    .project-description {
+        font-size: 0.9rem;
     }
 
     .testimonial-card-hover {
@@ -408,8 +575,18 @@
     }
 
     .testimonial-hover-text {
-        font-size: 1.2rem;
-        /* Further reduce font size */
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .testimonial-title {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .testimonial-full-content p {
+        font-size: 0.85rem;
+        margin-bottom: 10px;
     }
 
     .case-card-hover {
@@ -432,6 +609,14 @@
     .footer-social-icons a {
         margin-right: 10px;
     }
+
+    .section-subtitle {
+        font-size: 1.6rem;
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+    }
 }
 
 /* Media Queries for Small Mobiles (up to 576px) */
@@ -450,34 +635,59 @@
         margin-top: 20px;
     }
 
-    .card-hover {
-        height: 180px;
+    .project-card-hover {
+        height: 200px;
         /* Further reduce card height on extra small screens */
     }
 
-    .hover-text {
+    .project-preview-title {
+        font-size: 0.9rem;
+        padding: 7px 10px;
+    }
+
+    .project-hover-text {
+        padding: 10px;
+    }
+
+    .project-title {
         font-size: 1rem;
-        /* Small font size for mobile */
+        margin-bottom: 8px;
+    }
+
+    .project-description {
+        font-size: 0.85rem;
+        line-height: 1.3;
     }
 
     .testimonial-card-hover {
-        height: 180px;
+        height: 200px;
         /* Smaller height for mobile devices */
     }
 
     .testimonial-hover-text {
-        font-size: 1rem;
-        /* Smallest font size for mobile */
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .testimonial-title {
+        font-size: 0.95rem;
+        margin-bottom: 8px;
+    }
+
+    .testimonial-full-content p {
+        font-size: 0.8rem;
+        line-height: 1.3;
+        margin-bottom: 8px;
     }
 
     .quote {
-        font-size: 1rem;
-        /* Adjust quote font size for mobile */
+        font-size: 0.95rem;
+        line-height: 1.3;
     }
 
     .person-name {
-        font-size: 0.9rem;
-        /* Adjust person name font size for mobile */
+        font-size: 0.85rem;
+        margin-top: 8px;
     }
 
     .case-card-hover {
@@ -491,5 +701,157 @@
 
     .cta-text {
         font-size: 25px;
+    }
+
+    .section-subtitle {
+        font-size: 1.4rem;
+    }
+
+    .section-title {
+        font-size: 1.1rem;
+    }
+}
+
+/* Services Section Styling */
+.section-title.text-white {
+    color: white;
+}
+
+.section-subtitle.text-white {
+    color: white;
+}
+
+.section-header.text-center .section-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.service-card-hover {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.95);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.service-content {
+    padding: 30px 20px;
+}
+
+.service-icon {
+    font-size: 60px;
+    color: var(--blue-color);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.service-card-hover:hover .service-icon {
+    transform: scale(1.1);
+}
+
+.service-title {
+    font-weight: 700;
+    color: var(--blue-color);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.service-description {
+    color: var(--primary-text-color);
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.service-link {
+    color: var(--blue-color);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 2px;
+    transition: color 0.3s ease;
+}
+
+.service-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--blue-color);
+    transition: width 0.3s ease;
+}
+
+.service-link:hover {
+    color: var(--red-color);
+}
+
+.service-link:hover::after {
+    width: 100%;
+    background-color: var(--red-color);
+}
+
+/* Media queries for services section */
+@media (max-width: 992px) {
+    .service-icon {
+        font-size: 50px;
+    }
+    
+    .service-title {
+        font-size: 1.2rem;
+    }
+    
+    .service-description {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-content {
+        padding: 25px 15px;
+    }
+    
+    .service-icon {
+        font-size: 45px;
+        margin-bottom: 15px;
+    }
+    
+    .service-title {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+    
+    .service-description {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .service-icon {
+        font-size: 40px;
+    }
+    
+    .service-content {
+        padding: 20px 12px;
+    }
+    
+    .service-title {
+        font-size: 1rem;
+    }
+    
+    .service-description {
+        font-size: 0.85rem;
+        line-height: 1.4;
     }
 }
