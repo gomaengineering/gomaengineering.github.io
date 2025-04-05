@@ -1,4 +1,3 @@
-
 .contact-card {
     padding: 20px;
     margin: 20px 0;
@@ -6,21 +5,97 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background-color: #fff;
     width: 100%;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact-title {
     font-size: 2.5rem;
     font-weight: 600;
+    color: var(--primary-text-color);
 }
 
 .contact-subtitle {
     font-size: 1.25rem;
     margin-bottom: 20px;
+    color: var(--text-secondary);
 }
 
 .contact-card a {
     text-decoration: none;
     color: var(--primary-text-color);
+    transition: color 0.3s ease;
+}
+
+.contact-card a:hover {
+    color: var(--blue-color);
+}
+
+/* Dark mode styles for contact page */
+[data-theme="dark"] .contact-card {
+    background-color: var(--card-bg-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .contact-title,
+[data-theme="dark"] .contact-subtitle {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .form-control,
+[data-theme="dark"] .form-select {
+    background-color: var(--bg-secondary);
+    border-color: var(--border-color);
+    color: var(--text-color);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+[data-theme="dark"] .form-control:hover,
+[data-theme="dark"] .form-select:hover {
+    border-color: var(--blue-color);
+}
+
+[data-theme="dark"] .form-control:focus,
+[data-theme="dark"] .form-select:focus {
+    background-color: var(--bg-secondary);
+    border-color: var(--blue-color);
+    color: var(--text-color);
+    box-shadow: 0 0 0 0.25rem rgba(74, 102, 199, 0.25);
+}
+
+[data-theme="dark"] .form-control::placeholder {
+    color: var(--text-secondary);
+    opacity: 0.7;
+}
+
+[data-theme="dark"] .form-label {
+    color: var(--text-color);
+}
+
+/* Improve form styles in dark mode */
+[data-theme="dark"] textarea.form-control {
+    resize: vertical;
+}
+
+[data-theme="dark"] .form-check-input {
+    background-color: var(--bg-secondary);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .form-check-input:checked {
+    background-color: var(--blue-color);
+    border-color: var(--blue-color);
+}
+
+/* Form Button hover improvements */
+[data-theme="dark"] .primary-btn-filled {
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+[data-theme="dark"] .primary-btn-filled:hover {
+    background-color: var(--blue-color-light);
+    border-color: var(--blue-color-light);
+    transform: translateY(-2px);
 }
 
 @media (max-width: 576px) {
@@ -31,5 +106,4 @@
     .contact-subtitle {
         font-size: 1rem;
     }
-
 }

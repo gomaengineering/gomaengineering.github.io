@@ -4,7 +4,7 @@
 .hero-primary-btn-filled {
     border: 2px solid var(--blue-color);
     background-color: var(--blue-color);
-    color: #fff;
+    color: var(--dark-section-text);
     text-decoration: none;
     padding: 10px 15px;
     margin: 10px 10px 10px 0;
@@ -23,7 +23,7 @@
 .hero-secondary-btn-filled {
     border: 2px solid var(--red-color);
     background-color: var(--red-color);
-    color: #fff;
+    color: var(--dark-section-text);
     text-decoration: none;
     padding: 10px 15px;
     margin: 10px 10px 10px 0;
@@ -43,7 +43,7 @@
 .primary-btn-filled {
     border: 2px solid var(--blue-color);
     background-color: var(--blue-color);
-    color: #fff;
+    color: var(--dark-section-text);
     text-decoration: none;
     padding: 5px 10px;
     margin: 10px 10px 10px 0;
@@ -62,7 +62,7 @@
 .secondary-btn-filled {
     border: 2px solid var(--red-color);
     background-color: var(--red-color);
-    color: #fff;
+    color: var(--dark-section-text);
     text-decoration: none;
     padding: 5px 10px;
     margin: 10px 10px 10px 0;
@@ -89,12 +89,13 @@
     letter-spacing: 1.5px;
     text-transform: uppercase;
     font-weight: 500;
+    transition: all 0.3s ease;
 }
 
 .primary-btn-skeleton:hover {
     border: 2px solid transparent;
     background-color: var(--red-color);
-    color: #fff;
+    color: var(--dark-section-text);
 }
 
 /* card buttons */
@@ -146,6 +147,7 @@
     align-items: center !important;
     border: 2px solid var(--blue-color) !important;
     background-color: var(--blue-color) !important;
+    /* color: var(--dark-section-text) !important; */
     color: #fff !important;
     text-decoration: none;
     padding: 2px 7px !important;
@@ -155,12 +157,37 @@
 }
 
 .navbar-btn-filled:hover {
-    
     border: 2px solid var(--primary-text-color) !important;
     background-color: var(--primary-text-color) !important;
-    
+    /* color: var(--dark-section-text) !important; */
+    color: #fff !important;
 }
 
+/* Dark mode specific styling for navbar buttons */
+[data-theme="dark"] .navbar-btn-filled {
+    color: var(--dark-section-text) !important;
+}
+
+[data-theme="dark"] .navbar-btn-filled:hover {
+    color: var(--dark-section-text) !important;
+    background-color: var(--blue-color-light) !important;
+    border-color: var(--blue-color-light) !important;
+}
+
+/* Active state styling for navbar-btn-filled */
+.navbar-btn-filled.active {
+    color: #fff !important;
+    background-color: var(--blue-color) !important;
+    border-color: var(--blue-color) !important;
+    font-weight: 700 !important;
+}
+
+[data-theme="dark"] .navbar-btn-filled.active {
+    color: var(--dark-section-text) !important;
+    background-color: var(--blue-color) !important;
+    border-color: var(--blue-color) !important;
+    font-weight: 700 !important;
+}
 
 .navbar-btn-skeleton {
     display: flex !important;
@@ -177,15 +204,103 @@
 }
 
 .navbar-btn-skeleton:hover {
-    
     border: 2px solid var(--primary-text-color) !important;
     background-color: var(--primary-text-color) !important;
-    color: #fff !important;
+    color: var(--dark-section-text) !important;
 }
 
+/* Active state styling for navbar-btn-skeleton */
+.navbar-btn-skeleton.active {
+    border: 2px solid var(--blue-color) !important;
+    background-color: transparent !important;
+    color: var(--blue-color) !important;
+    font-weight: 700 !important;
+}
+
+[data-theme="dark"] .navbar-btn-skeleton.active {
+    border: 2px solid var(--blue-color) !important;
+    background-color: transparent !important;
+    color: var(--blue-color) !important;
+    font-weight: 700 !important;
+}
+
+/* Dark mode adjustments for custom buttons */
+[data-theme="dark"] .navbar-btn-skeleton {
+    color: var(--blue-color) !important;
+    border-color: var(--blue-color) !important;
+}
+
+[data-theme="dark"] .navbar-btn-skeleton:hover {
+    color: var(--dark-section-text) !important;
+    background-color: var(--blue-color-light) !important;
+    border-color: var(--blue-color-light) !important;
+}
+
+[data-theme="dark"] .primary-btn-skeleton {
+    color: var(--blue-color) !important;
+    border-color: var(--blue-color) !important;
+}
+
+[data-theme="dark"] .primary-btn-skeleton:hover {
+    color: var(--dark-section-text) !important;
+    background-color: var(--red-color) !important;
+}
+
+/* Dark mode adjustments for accordions */
+[data-theme="dark"] .accordion-button {
+    color: var(--primary-text-color);
+    background-color: var(--card-bg-color);
+}
+
+[data-theme="dark"] .accordion-button:not(.collapsed) {
+    color: var(--primary-text-color);
+    background-color: var(--card-bg-color);
+}
+
+[data-theme="dark"] .accordion-button::after {
+    filter: invert(1);
+}
+
+[data-theme="dark"] .accordion-item {
+    background-color: var(--card-bg-color);
+    border-color: var(--border-color);
+}
+
+/* Dark mode adjustments for accordion-flush specifically */
+[data-theme="dark"] .accordion-flush .accordion-item {
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+    background-color: var(--card-bg-color);
+}
+
+[data-theme="dark"] .accordion-flush .accordion-button {
+    border-radius: 0;
+    background-color: var(--card-bg-color);
+    color: var(--primary-text-color);
+}
+
+[data-theme="dark"] .accordion-flush .accordion-button strong {
+    color: var(--primary-text-color);
+}
+
+[data-theme="dark"] .accordion-flush .accordion-collapse {
+    background-color: var(--card-bg-color);
+    color: var(--primary-text-color);
+}
+
+[data-theme="dark"] .accordion-body {
+    background-color: var(--card-bg-color);
+    color: var(--primary-text-color);
+}
+
+[data-theme="dark"] .accordion-body ul,
+[data-theme="dark"] .accordion-body li {
+    color: var(--primary-text-color);
+}
 
 .slow-hover {
-    transition: all 0.5s ease;
+    transition: all 0.5s;
 }
 .slow-hover:hover {
     transform: scale(1.01);
@@ -193,10 +308,9 @@
 
 @media (max-width: 992px) {
     .card-btn-filled {
-        margin: 15px 0 0 0;
+        padding: 5px 10px;
     }
-
     .card-btn-skeleton {
-        margin: 15px 0 0 0;
+        padding: 5px 10px;
     }
 }

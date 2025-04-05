@@ -3,26 +3,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-/* Custom classes */
 
-/* Variables */
-
-body {
-
-    /* Color Palatte */
-    /* --primary-color: #101e40;
-    --primary-text-color: #033f57;
-    --primary-btn-color: #055586;
-    --primary-btn-hover-color: #0570b1;
-    --listings-bg-color: #fff; */
-
+/* Light Mode (Default) Variables */
+:root {
     --primary-text-color: #28231d;
     --btn-hover-color: #033f57;
     --red-color: #ec4227;
     --blue-color: #2a4290;
+    
+    /* Light Mode Specific */
+    --bg-color: #ffffff;
+    --bg-secondary: #f8f9fa;
+    --text-color: #28231d;
+    --text-secondary: #4a4a4a;
+    --border-color: #e0e0e0;
+    --card-bg: #ffffff;
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --dark-section-bg: var(--blue-color);
+    --dark-section-text: #ffffff;
+    --footer-bg: #f8f9fa;
+    --footer-text: #000000;
+    --footer-bottom-bg: #000000;
+    --footer-bottom-text: #ffffff;
+}
 
+/* Dark Mode Variables */
+[data-theme="dark"] {
+    --primary-text-color: #e6e6e6;
+    --btn-hover-color: #5783a0;
+    --red-color: #ff5a43;
+    --blue-color: #4a66c7;
+    --blue-color-light: #5a7bc7;
+    
+    /* Dark Mode Specific */
+    --bg-color: #121212;
+    --bg-secondary: #1e1e1e;
+    --text-color: #e6e6e6;
+    --text-secondary: #b0b0b0;
+    --border-color: #333333;
+    --card-bg: #1e1e1e;
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    --dark-section-bg: #1a1a1a;
+    --dark-section-text: #e6e6e6;
+    --footer-bg: #1e1e1e;
+    --footer-text: #e6e6e6;
+    --footer-bottom-bg: #000000;
+    --footer-bottom-text: #e6e6e6;
+}
+
+body {
     /* Custom Fonts */
-
     .hind-siliguri {
         font-family: "Hind Siliguri", sans-serif;
     }

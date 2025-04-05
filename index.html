@@ -71,6 +71,12 @@
             <li class="nav-item">
               <a class="nav-link navbar-btn-filled" href="Pages/contactus.html">Contact Us</a>
             </li>
+            <li class="nav-item ms-2 d-flex align-items-center">
+              <button id="darkModeToggle" class="btn btn-sm dark-mode-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+              </button>
+            </li>
           </ul>
         </div>
       </div>
@@ -129,26 +135,26 @@
     <div class="row align-items-center">
       <div class="col-lg-6 col-md-12">
         <div class="section-text-content">
-          <div class="d-flex justify-content-start align-items-start flex-column">
+          <div class="section-header text-start">
             <h3 class="section-title">About Us</h3>
             <h2 class="section-subtitle slow-hover">
               Engineering Excellence, Delivered with Integrity and Innovation
             </h2>
-            <p class="section-text">
-              Goma Engineering Consultation is a leading engineering
-              consultation company focusing on providing sustainable solutions
-              to a wide range of engineering projects. We are committed to
-              providing innovative and cost-effective solutions that meet the
-              needs of our clients. Our team of experienced engineers and
-              consultants work closely with our clients to develop solutions
-              that are tailored to their company's needs. We are dedicated to
-              delivering high-quality services that exceed our clients'
-              expectations and help them achieve their goals.
-            </p>
-            <a href="Pages/aboutus.html" class="primary-btn-filled mt-3">
-              More About Us <i class="bi bi-arrow-right"></i>
-            </a>
           </div>
+          <p class="section-text">
+            Goma Engineering Consultation is a leading engineering
+            consultation company focusing on providing sustainable solutions
+            to a wide range of engineering projects. We are committed to
+            providing innovative and cost-effective solutions that meet the
+            needs of our clients. Our team of experienced engineers and
+            consultants work closely with our clients to develop solutions
+            that are tailored to their company's needs. We are dedicated to
+            delivering high-quality services that exceed our clients'
+            expectations and help them achieve their goals.
+          </p>
+          <a href="Pages/aboutus.html" class="primary-btn-filled mt-3">
+            More About Us <i class="bi bi-arrow-right"></i>
+          </a>
         </div>
       </div>
       <div class="col-lg-6 col-md-12 text-center mt-4 mt-lg-0">
@@ -163,36 +169,50 @@
   <section class="dark-section-bg hind-siliguri" id="services">
     <section class="container">
       <div class="py-5">
-        <h3>What we do?</h3>
-        <h2 class="section-subtitle">Our Services</h2>
-        <div class="row text-center">
+        <div class="section-header text-center">
+          <h3 class="section-title text-white">What we do?</h3>
+          <h2 class="section-subtitle text-white">Our Services</h2>
+        </div>
+        <div class="row mt-4">
           <div class="col-lg-4 col-md-6 mb-4">
-            <div class="d-flex justify-content-center align-items-center flex-column">
-              <div class="body-icons">
-                <i class="fa-brands fa-pagelines slow-hover"></i>
+            <div class="card service-card-hover">
+              <div class="service-content text-center">
+                <div class="service-icon">
+                  <i class="fa-brands fa-pagelines slow-hover"></i>
+                </div>
+                <h4 class="service-title">Sustainability Management</h4>
+                <p class="service-description">Comprehensive strategies to reduce environmental impact and ensure sustainable business practices.</p>
+                <a href="Pages/services.html#sustainability" class="service-link">Learn More</a>
               </div>
-              <h5>Sustainability Management</h5>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
-            <div class="d-flex justify-content-center align-items-center flex-column">
-              <div class="body-icons">
-                <i class="fa-solid fa-city slow-hover"></i>
+            <div class="card service-card-hover">
+              <div class="service-content text-center">
+                <div class="service-icon">
+                  <i class="fa-solid fa-city slow-hover"></i>
+                </div>
+                <h4 class="service-title">Construction Project Management</h4>
+                <p class="service-description">Expert oversight of construction projects from inception to completion.</p>
+                <a href="Pages/services.html#construction" class="service-link">Learn More</a>
               </div>
-              <h5>Construction Project Management</h5>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
-            <div class="d-flex justify-content-center align-items-center flex-column">
-              <div class="body-icons">
-                <i class="fa-solid fa-file-invoice slow-hover"></i>
+            <div class="card service-card-hover">
+              <div class="service-content text-center">
+                <div class="service-icon">
+                  <i class="fa-solid fa-file-invoice slow-hover"></i>
+                </div>
+                <h4 class="service-title">Bid Writing</h4>
+                <p class="service-description">Professional proposal preparation services to help you win contracts and tenders.</p>
+                <a href="Pages/services.html#bidwriting" class="service-link">Learn More</a>
               </div>
-              <h5>Bid Writing</h5>
             </div>
           </div>
         </div>
 
-        <div class="mt-5">
+        <div class="text-center mt-5">
           <a href="Pages/services.html" class="secondary-btn-filled">
             More Services <i class="bi bi-arrow-right"></i>
           </a>
@@ -205,29 +225,58 @@
 
   <section class="container hind-siliguri" id="projects">
     <div class="pt-5">
-      <h3 class="section-title">Recent Projects</h3>
-      <h2 class="section-subtitle">Our Outstanding Works</h2>
+      <div class="section-header text-start">
+        <h3 class="section-title">Recent Projects</h3>
+        <h2 class="section-subtitle">Our Outstanding Works</h2>
+      </div>
       <div class="my-4">
         <div class="row">
           <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card card-hover border-radius-trr">
-              <div class="card-img-overlay">Project 1</div>
+            <div class="card project-card-hover border-radius-trr">
+              <div class="card-img-overlay d-flex justify-content-start align-items-start flex-column">
+                <div class="project-preview border-radius-trr-internal">
+                  <h5 class="project-preview-title">Carbon Reduction Plan and Baseline Reporting</h5>
+                </div>
+              </div>
               <img src="Assets/building1.jpg" class="card-img-top" alt="Project 1 Image" />
-              <div class="hover-text">Project Description 1</div>
+              <div class="project-hover-text border-radius-trr-internal">
+                <div class="project-full-content">
+                  <h5 class="project-title">Carbon Reduction Plan and Baseline Reporting</h5>
+                  <p class="project-description">Cotaplan Modular Buildings Pvt Ltd<br>Wigan, UK</p>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card card-hover border-radius-trr">
-              <div class="card-img-overlay">Project 2</div>
+            <div class="card project-card-hover border-radius-trr">
+              <div class="card-img-overlay d-flex justify-content-start align-items-start flex-column">
+                <div class="project-preview border-radius-trr-internal">
+                  <h5 class="project-preview-title">Sustainability Consultation and Bid Writing Consultation</h5>
+                </div>
+              </div>
               <img src="Assets/building2.jpg" class="card-img-top" alt="Project 2 Image" />
-              <div class="hover-text">Project Description 2</div>
+              <div class="project-hover-text border-radius-trr-internal">
+                <div class="project-full-content">
+                  <h5 class="project-title">Sustainability Consultation and Bid Writing Consultation</h5>
+                  <p class="project-description">Earle Consulting Pvt Ltd<br>Liverpool, UK</p>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card card-hover border-radius-trr">
-              <div class="card-img-overlay">Project 3</div>
+            <div class="card project-card-hover border-radius-trr">
+              <div class="card-img-overlay d-flex justify-content-start align-items-start flex-column">
+                <div class="project-preview border-radius-trr-internal">
+                  <h5 class="project-preview-title">Awareness Program - NEA</h5>
+                </div>
+              </div>
               <img src="Assets/building3.jpg" class="card-img-top" alt="Project 3 Image" />
-              <div class="hover-text">Project Description 3</div>
+              <div class="project-hover-text border-radius-trr-internal">
+                <div class="project-full-content">
+                  <h5 class="project-title">Awareness Program on Safe and Efficient Use of Electricity</h5>
+                  <p class="project-description">For grid connected consumers in the project areas of Kohalpur-Nepalganj 132KV Transmission Line Project in Banke District – Nepal Electricity Authority<br>Social Safeguard and Environment Management Department (SSEMD)<br>Matatirtha, Kathmandu, Nepal</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -246,7 +295,7 @@
 
   <section class="container hind-siliguri">
     <div class="py-5">
-      <div class="d-flex justify-content-end align-items-end flex-column">
+      <div class="section-header text-end">
         <h3 class="section-title">Testimonials</h3>
         <h2 class="section-subtitle">Supply Chain Comments</h2>
       </div>
@@ -256,27 +305,25 @@
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card testimonial-card-hover border-radius-tlr">
               <div class="card-img-overlay d-flex justify-content-center align-items-center flex-column">
-                <p class="quote">"A wonderful experience!"</p>
-                <p class="person-name">- John Doe</p>
+                <div class="testimonial-preview border-radius-tlr-internal">
+                  <p class="quote">Implementing a Sustainability Management System (SMS) allows businesses to monitor emissions while addressing environmental responsibilities.</p>
+                  <p class="person-name">– Kevin Earle</p>
+                </div>
               </div>
 
-              <div class="testimonial-hover-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Officiis, eos.
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card testimonial-card-hover border-radius-tlr">
-              <div class="card-img-overlay d-flex justify-content-center align-items-center flex-column">
-                <p class="quote">"Highly recommended!"</p>
-                <p class="person-name">- Jane Smith</p>
-              </div>
-
-              <div class="testimonial-hover-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, voluptates.
+              <div class="testimonial-hover-text border-radius-tlr-internal">
+                <div class="testimonial-full-content">
+                  <h5 class="testimonial-title">Kevin Earle - Earle Consulting</h5>
+                  <p>The UK government's commitment to net zero by 2050 underscores the urgency of
+                  addressing carbon emissions, a priority shared by over 300 local authorities declaring climate
+                  emergencies. Local authorities are increasingly embedding sustainability into procurement, rewarding
+                  suppliers who can demonstrate measurable carbon reduction and social value delivery.</p>
+                  <p>Implementing a Sustainability Management System (SMS) as provided by Goma Engineering Consultation allows
+                  businesses to monitor Scope 1, 2, and 3 emissions while addressing environmental, social, and economic
+                  responsibilities. By adopting this SMS, businesses not only reduce their carbon footprint but also align
+                  with their clients' sustainability goals, adding tangible value to both parties. This approach ensures a
+                  meaningful contribution to the shared journey toward net zero.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -284,13 +331,37 @@
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card testimonial-card-hover border-radius-tlr">
               <div class="card-img-overlay d-flex justify-content-center align-items-center flex-column">
-                <p class="quote">"Top-notch service!"</p>
-                <p class="person-name">- Michael Lee</p>
+                <div class="testimonial-preview border-radius-tlr-internal">
+                  <p class="quote">"Highly recommended!"</p>
+                  <p class="person-name">- Jane Smith</p>
+                </div>
               </div>
 
-              <div class="testimonial-hover-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, voluptates.
+              <div class="testimonial-hover-text border-radius-tlr-internal">
+                <div class="testimonial-full-content">
+                  <h5 class="testimonial-title">Jane Smith - ABC Company</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam, voluptates.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card testimonial-card-hover border-radius-tlr">
+              <div class="card-img-overlay d-flex justify-content-center align-items-center flex-column">
+                <div class="testimonial-preview border-radius-tlr-internal">
+                  <p class="quote">"Top-notch service!"</p>
+                  <p class="person-name">- Michael Lee</p>
+                </div>
+              </div>
+
+              <div class="testimonial-hover-text border-radius-tlr-internal">
+                <div class="testimonial-full-content">
+                  <h5 class="testimonial-title">Michael Lee - XYZ Industries</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam, voluptates.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -305,7 +376,7 @@
 
   <section class="container hind-siliguri">
     <div class="pt-5">
-      <div class="d-flex justify-content-start align-items-start flex-column">
+      <div class="section-header text-start">
         <h3 class="section-title">Case Studies</h3>
         <h2 class="section-subtitle">Learn about our projects</h2>
       </div>
@@ -314,7 +385,7 @@
         <div class="row">
           <div class="col-lg-4 col-md-6 mb-4">
             <a href="https://www.google.com" target="_blank">
-              <div class="card case-card-hover border-radius-trr">
+              <div class="card case-card-hover border-radius-trr" style="background-image: url('Assets/building1.jpg');">
                 <div class="card-img-overlay d-flex justify-content-center align-items-center flex-column">
                   <p class="quote">"A wonderful experience!"</p>
                   <p class="person-name">- John Doe</p>
@@ -326,7 +397,7 @@
 
           <div class="col-lg-4 col-md-6 mb-4">
             <a href="https://www.google.com" target="_blank">
-              <div class="card case-card-hover border-radius-trr">
+              <div class="card case-card-hover border-radius-trr" style="background-image: url('Assets/building2.jpg');">
                 <div class="card-img-overlay d-flex justify-content-center align-items-center flex-column">
                   <p class="quote">"An amazing project!"</p>
                   <p class="person-name">- Jane Smith</p>
@@ -338,7 +409,7 @@
 
           <div class="col-lg-4 col-md-6 mb-4">
             <a href="https://www.google.com" target="_blank">
-              <div class="card case-card-hover border-radius-trr">
+              <div class="card case-card-hover border-radius-trr" style="background-image: url('Assets/building3.jpg');">
                 <div class="card-img-overlay d-flex justify-content-center align-items-center flex-column">
                   <p class="quote">"Exceptional service!"</p>
                   <p class="person-name">- Michael Lee</p>
@@ -394,7 +465,7 @@
           <div>+977-9851364187</div>
           <div class="stop-overflow-email">
             <a href="mailto:gomaengineeringconsultation@gmail.com"
-              style="text-decoration: none; color: var(--primary-text-color);">gomaengineeringconsultation@gmail.com</a>
+              style="text-decoration: none; color: var(--footer-text);">gomaengineeringconsultation@gmail.com</a>
           </div>
 
           <div class="footer-social-icons mt-2">
@@ -471,5 +542,6 @@
   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="Scripts/navbar.js"></script>
 <script src="Scripts/back-to-top.js"></script>
+<script src="Scripts/theme-switcher.js"></script>
 
 </html>
