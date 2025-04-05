@@ -39,7 +39,22 @@
 
 .accordion-button:not(.collapsed) {
     /* overwriting bs css */
-    background-color: #fff;
+    background-color: var(--card-bg-color);
+    color: var(--primary-text-color);
+}
+
+.accordion-button {
+    background-color: var(--card-bg-color);
+    color: var(--primary-text-color);
+}
+
+.accordion-body {
+    background-color: var(--card-bg-color);
+    color: var(--primary-text-color);
+}
+
+.accordion-item {
+    border-color: var(--border-color);
 }
 
 .subpage-content-container {
@@ -50,11 +65,13 @@
     font-size: 50px;
     font-weight: 600 !important;
     line-height: 1.1;
+    color: var(--primary-text-color);
 }
 
 .subpage-subheading {
     font-size: 40px;
     font-weight: 500 !important;
+    color: var(--primary-text-color);
 }
 
 .value-card {
@@ -62,6 +79,8 @@
     height: 200px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    background-color: var(--card-bg-color);
+    color: var(--primary-text-color);
 }
 
 .value-card:hover {
